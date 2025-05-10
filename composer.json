@@ -1,0 +1,99 @@
+{
+  "name": "grnspc/measure",
+  "description": "A collection of unit conversions utils for Laravel",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "measures-for-laravel"
+  ],
+  "readme": "README.md",
+  "authors": [
+    {
+      "role": "Developer",
+      "name": "Nate Robinson",
+      "email": "grnspc.dev@gmail.com",
+      "homepage": "https://grnspc.com/"
+    }
+  ],
+  "homepage": "https://github.com/grnspc/measures-for-laravel",
+  "support": {
+    "email": "juststevemcd@gmail.com",
+    "issues": "https://github.com/juststeveking/laravel-flows/issues",
+    "source": "https://github.com/juststeveking/laravel-flows"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/juststeveking"
+    }
+  ],
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.22.1",
+    "orchestra/testbench": "^10.2",
+    "pestphp/pest": "^3.8.2",
+    "pestphp/pest-plugin-laravel": "^3.2",
+    "phpstan/extension-installer": "^1.4.3",
+    "phpstan/phpstan": "^2.1.14",
+    "phpstan/phpstan-strict-rules": "^2.0.4",
+    "roave/security-advisories": "dev-latest"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Grnspc\\Measures\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Grnspc\\Measures\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true
+    },
+    "github-protocols": [
+      "git",
+      "ssh",
+      "https"
+    ],
+    "optimize-autoloader": true,
+    "classmap-authoritative": true,
+    "sort-packages": true,
+    "bump-after-update": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Grnspc\\Measures\\Providers\\PackageServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
+    ],
+    "lint": [
+      "./vendor/bin/pint --test"
+    ],
+    "pint": [
+      "./vendor/bin/pint"
+    ],
+    "stan": [
+      "./vendor/bin/phpstan analyse --memory-limit=-1"
+    ],
+    "test": [
+      "./vendor/bin/pest"
+    ],
+    "test-coverage": [
+      "./vendor/bin/pest --coverage"
+    ]
+  },
+  "scripts-descriptions": {}
+}
