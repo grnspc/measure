@@ -16,11 +16,11 @@
       "homepage": "https://grnspc.com/"
     }
   ],
-  "homepage": "https://github.com/grnspc/measures-for-laravel",
+  "homepage": "https://github.com/grnspc/measure",
   "support": {
-    "email": "juststevemcd@gmail.com",
-    "issues": "https://github.com/juststeveking/laravel-flows/issues",
-    "source": "https://github.com/juststeveking/laravel-flows"
+    "email": "grnspc.dev@gmail.com",
+    "issues": "https://github.com/grnspc/measure/issues",
+    "source": "https://github.com/grnspc/measure"
   },
   "funding": [
     {
